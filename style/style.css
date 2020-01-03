@@ -1,0 +1,461 @@
+body {
+    background: url(../images/backForBody.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.paralax {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.logo {
+    font-family: 'Faster One', cursive;
+    color: #37394b;
+    width: 374px;
+    font-size: 32px;
+    position: absolute;
+    left: calc(50% - 187px);
+    top: 20px;
+    display: flex;
+    letter-spacing: 6px;
+    margin: 0;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#menu {
+    background: #f74c4cbd;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+#search {
+    background: #028e3a8f;
+    width: 40px;
+    height: 40px;
+}
+#searchField {
+    position: relative;
+    right: 200px;
+}
+.slider {
+    height: 300px;
+    width: 100px;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+}
+@keyframes moveBackground {
+    from {background-position: right;}
+    to {background-position: left;}
+}
+@keyframes rotateWheel {
+    100% {transform: rotate(360deg);}
+}
+.mainBackground {
+    background: url(../images/paralax_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 287px;
+    width: 100%;
+}
+.sea {
+    background: url(../images/paralax_sea.png);
+    background-repeat: repeat-x;
+    background-size: 50%;
+    height: 42px;
+    margin-top: -11px;
+    animation: moveBackground linear infinite;
+}
+.ground{
+    background: url(../images/paralax_ground.png);
+    background-repeat: repeat-x;
+    background-size: 50%;
+    height: 50px;
+    margin-top: -12px;
+    animation: moveBackground linear infinite;
+}
+.road{
+    background: url(../images/paralax_road.png);
+    background-repeat: repeat-x;
+    background-size: 50%;
+    height: 100px;
+    margin-top: -10px;
+    animation: moveBackground linear infinite;
+    position: relative;
+}
+.vehicle {
+    background: url(../images/suv.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 170px;
+    width: 31%;
+    position: relative;
+    bottom: 114px;
+    left: calc(50% - 15.5%);
+    display: flex;
+}
+.stopBackDisk {
+    width: 36px;
+    position: absolute;
+    bottom: 27px;
+    left: 58px;
+    z-index: 1;
+    transform: scale(1);
+}
+.stopForwardDisk {
+    width: 36px;
+    position: absolute;
+    bottom: 27px;
+    left: 311px;
+    z-index: 1;
+    transform: scale(1);
+}
+.wheel {
+    background: url(../images/wheel_suv1.png);
+    background-size: 100%;
+    position: relative;
+    top: 52%;
+    left: 10%;
+    height: 74px;
+    width: 74px;
+    border-radius: 50%;
+    animation: rotateWheel linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkedWheel {
+    width: 37px;
+    z-index: 1;
+}
+.wheelAnimation {
+    animation-duration: 2s;
+    z-index: 1;
+}
+.wheelAnimationFaster {
+    animation-duration: 1.3s;
+    z-index: 1;
+}
+.seaAnimation {
+    animation-duration: 9s;
+}
+.seaAnimationFaster {
+    animation-duration: 6s;
+}
+.groundAnimation {
+    animation-duration: 7s;
+}
+.groundAnimationFaster {
+    animation-duration: 4s;
+}
+.roadAnimation {
+    animation-duration: 4s;
+}
+.roadAnimationFaster {
+    animation-duration: 2s;
+}
+.speedControl {
+    position: absolute;
+    top: 81px;
+    left: calc(50% - 66.5px);
+    display: flex;
+    width: 133px;
+    justify-content: space-between;
+}
+.moveButton {
+    position: relative;
+    display: flex;
+    font-size: 90%;
+    font-weight: 700;
+    color: rgb(209,209,217);
+    text-decoration: none;
+    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+    outline: none;
+    border-radius: 3px;
+    background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+    box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+    transition: .2s ease-in-out;
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+}
+.moveButton:hover:not(:active) {
+    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+.moveButton:active {
+    top: 1px;
+    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    box-shadow: 
+    0 0 1px rgba(0,0,0,.5) inset,
+    0 2px 3px rgba(0,0,0,.5) inset, 
+    0 1px 1px rgba(255,255,255,.1);
+}
+.stopIcon {
+    clip-path: inset(0 0 0 0);
+    height: 17px;
+    width: 17px;
+    background: #f5d9a5;
+}
+.goIcon {
+    clip-path: polygon(35% 0, 60% 50%, 35% 100%, 0% 100%, 25% 50%, 0% 0%);
+    height: 20px;
+    width: 20px;
+    background: #f5d9a5;
+    margin-left: 10px;
+}
+.doubleGoIcon {
+    clip-path: polygon(35% 0, 60% 50%, 35% 100%, 0% 100%, 25% 50%, 0% 0%);
+    height: 20px;
+    width: 20px;
+    background: #f5d9a5;
+    margin: 0;
+    position: absolute;
+}
+.hideFilter {
+    width: 25%;
+    height: 100%;
+    background: #292a3eed;
+    position: fixed;
+    top: 0px;
+    left: -25%;
+    transition: 0.5s;
+    z-index: 1;
+    font-family: 'Montserrat Alternates', sans-serif;
+    letter-spacing: 2px;
+}
+.showFilter {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+    font-family: 'Montserrat Alternates', sans-serif;
+    letter-spacing: 2px;
+}
+.filterTitle {
+    color: #f5d9a5;
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.filterName {
+    text-align: center;
+    color: #f5d9a5;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.productList {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 35px;
+}
+.sizeList {
+    list-style: none;
+    margin: 0;
+    padding-left: 80px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+.sizeList li{
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+.sizeList li label{
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+.sizeList li p {
+    margin: 0;
+    color: #f5d9a5;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.filterButtons {
+    margin: 0 auto;
+    width: 250px;
+}
+#applyButton {
+    margin-right: 73px;
+    width: 85px;
+    height: 35px;
+}
+#applyButton:hover {
+    cursor: pointer;
+    color: #f5d9a5;
+    background: #363749;
+}
+#resetButton {
+    width: 85px;
+    height: 35px;
+}
+#resetButton:hover {
+    cursor: pointer;
+    color: #f5d9a5;
+    background: #363749;
+}
+.filterButton {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 65px;
+    height: 50px;
+    background: #292a3eed;
+    position: absolute;
+    left: 100%;
+    top: 50px;
+    clip-path: polygon(0% 0%, 100% 0, 70% 50%, 100% 100%, 0% 100%);
+}
+#filterButton:hover {
+    cursor: pointer;
+}
+.mainContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
+.banners {
+    width: 25%;
+    background: #3a38384a;
+}
+.wheelsContainer {
+    padding: 40px;
+    width: 93.7%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.noMatches {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 35px;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 6px;
+    height: 250px;
+    display: flex;
+    color: #22242f;
+}
+.wheelItem {
+    width: 23%;
+    background: #ffffff99;
+    box-shadow: 6px 6px 14px 0px #3e3e3e80;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+.wheelPicture {
+    width: 59.5%;
+    position: relative;
+    left: calc(50% - 29.75%);
+}
+.wheelDescription {
+    padding: 0 20px;
+}
+.wheelPrice {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+    letter-spacing: 1px;
+}
+.wheelName {
+    font-weight: 600;
+    margin: 40px 0px 0px 0px;
+    color: #a20000;
+}
+.typeSize {
+    display: flex;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.typeSizeName {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    width: 50%;
+    text-transform: capitalize;
+}
+img {
+    transition: 1s;
+}
+.wheelMask {
+    width: 100%;
+    height: -webkit-fill-available;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: #0a0b251f;
+    transition: all 0.3s ease-in-out;
+    border-radius: 7px;
+}
+.wheelMask h2 {
+    transform: translateY(-100px);
+    font-family: 'Montserrat Alternates', sans-serif;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    margin: 70px 0 0 0;
+}
+a.previewButton {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 9px;
+    background: #f2f3f2;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    left: calc(50% - 19px);
+    transform: translateY(235px);
+    border-radius: 3px;
+}
+.wheelItem:hover img.wheelPicture {
+    transform: rotate(180deg) scale(1.2);
+}
+.wheelMask:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.wheelMask:hover h2{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.wheelMask:hover a.previewButton{
+    opacity: 1;
+    transform: translateY(0px);
+}
+a.previewButton:hover {
+    background: #f5d9a5;
+}

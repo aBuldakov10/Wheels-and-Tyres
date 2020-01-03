@@ -1,0 +1,148 @@
+{
+    "disk": [
+        {
+            "name": "Aero A7440",
+            "subname": "Aero",
+            "size": 16,
+            "type": "aluminum",
+            "price": 80,
+            "color": "black",
+            "image": "images/wheels/aluminum/black.png"
+        },
+        {
+            "name": "Oxigin 18 Concave",
+            "subname": "Oxigin",
+            "size": 17,
+            "type": "aluminum",
+            "price": 125,
+            "color": "black",
+            "image": "images/wheels/aluminum/black2.png"
+        },
+        {
+            "name": "Advanti N628D Vigoroso",
+            "subname": "Advanti",
+            "size": 18,
+            "type": "aluminum",
+            "price": 90,
+            "color": "black",
+            "image": "images/wheels/aluminum/black3.png"
+        },
+        {
+            "name": "VSN CVT-R",
+            "subname": "VSN",
+            "size": 15,
+            "type": "aluminum",
+            "price": 143,
+            "color": "black",
+            "image": "images/wheels/aluminum/black4.png"
+        },
+        {
+            "name": "Advanti SP70G Rasato",
+            "subname": "Advanti",
+            "size": 16,
+            "type": "aluminum",
+            "price": 112,
+            "color": "black",
+            "image": "images/wheels/aluminum/black5.png"
+        },
+        {
+            "name": "Buffalo BW-200",
+            "subname": "Buffalo",
+            "size": 18,
+            "type": "aluminum",
+            "price": 93,
+            "color": "grey",
+            "image": "images/wheels/aluminum/grey.png"
+        },
+        {
+            "name": "DEVINO DV 457",
+            "subname": "DEVINO",
+            "size": 17,
+            "type": "aluminum",
+            "price": 103,
+            "color": "grey",
+            "image": "images/wheels/aluminum/grey2.png"
+        },
+        {
+            "name": "Buffalo BW-422",
+            "subname": "Buffalo",
+            "size": 18,
+            "type": "aluminum",
+            "price": 111,
+            "color": "blackYellow",
+            "image": "images/wheels/aluminum/blackYellow.png"
+        },
+        {
+            "name": "Fondmetal RS015",
+            "subname": "Fondmetal",
+            "size": 17,
+            "type": "aluminum",
+            "price": 139,
+            "color": "white",
+            "image": "images/wheels/aluminum/white.png"
+        },
+        {
+            "name": "Lumarai Morro",
+            "subname": "Lumarai",
+            "size": 16,
+            "type": "aluminum",
+            "price": 153,
+            "color": "white",
+            "image": "images/wheels/aluminum/white2.png"
+        },
+        {
+            "name": "KONIG N708 Intergram",
+            "subname": "KONIG",
+            "size": 15,
+            "type": "steel",
+            "price": 106,
+            "color": "white",
+            "image": "images/wheels/steel/white.png"
+        },
+        {
+            "name": "VSN VFS5",
+            "subname": "VSN",
+            "size": 15,
+            "type": "steel",
+            "price": 85,
+            "color": "grey",
+            "image": "images/wheels/steel/grey.png"
+        },
+        {
+            "name": "KONIG SP82 Interflow",
+            "subname": "KONIG",
+            "size": 17,
+            "type": "steel",
+            "price": 127,
+            "color": "grey",
+            "image": "images/wheels/steel/grey2.png"
+        },
+        {
+            "name": "Aero A1051",
+            "subname": "Aero",
+            "size": 16,
+            "type": "steel",
+            "price": 138,
+            "color": "black",
+            "image": "images/wheels/steel/black.png"
+        },
+        {
+            "name": "Victor Equipment LeMans",
+            "subname": "Victor",
+            "size": 18,
+            "type": "steel",
+            "price": 82,
+            "color": "black",
+            "image": "images/wheels/steel/black2.png"
+        },
+        {
+            "name": "Victor Equipment Zehn",
+            "subname": "Victor",
+            "size": 15,
+            "type": "steel",
+            "price": 96,
+            "color": "black",
+            "image": "images/wheels/steel/black3.png"
+        }
+    ]
+}

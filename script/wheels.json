@@ -1,0 +1,59 @@
+{
+  "steel": {
+  	"idS1": {
+  		"title": "producer company 1",
+  		"color": "black",
+  		"price": "100",
+  		"sourse": "url"
+  	},
+  	"idS2": {
+  		"title": "producer company 2",
+  		"color": "black",
+  		"price": "150",
+  		"sourse": "url"
+  	},
+  	"idS3": {
+  		"title": "producer company 3",
+  		"color": "black",
+  		"price": "200",
+  		"sourse": "url"
+  	},
+  	"idS4": {
+  		"title": "producer company 4",
+  		"color": "black",
+  		"price": "75",
+  		"sourse": "url"
+  	},
+  	"idS5": {
+  		"title": "producer company 5",
+  		"color": "black",
+  		"price": "140",
+  		"sourse": "url"
+  	},
+  	"idS6": {
+  		"title": "producer company 6",
+  		"color": "black",
+  		"price": "230",
+  		"sourse": "url"
+  	},
+  	"idS7": {
+  		"title": "producer company 7",
+  		"color": "black",
+  		"price": "190",
+  		"sourse": "url"
+  	}
+  },
+  "aluminum": {
+  	"idA1": {},
+  	"idA2": {},
+  	"idA3": {},
+  	"idA4": {},
+  	"idA5": {},
+  	"idA6": {},
+  	"idA7": {},
+  	"idA8": {},
+  	"idA9": {},
+  	"idA10": {},
+  	"idA11": {}
+  }
+}
